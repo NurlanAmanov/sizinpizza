@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu-bars">
+                <div class="headermobile">
+                    <a id="logo" href="#">
+                        <h1>Sizin pizza</h1>
+                    </a>
+                    <div onclick="openbar()" class="barsiocn">
+                        <span id="xett1"></span>
+                        <span id="xett2"></span>
+                        <span id="xett3"></span>
+                    </div>
+    
+    
+                </div>
+                <div id="menumobile" class="mobile-bar">
+                    <ul id="mobile-menu">
+                        <li><a href="">Ana səhifə</a></li>
+                        <li  class="drops">
+                            <a  href="#">Haqqımızda</a>
+                           
+                        </li>
+                        
+                        <li><a href="">Əlaqə</a></li>
+                        <li><a href="">Təklif</a></li>
+                    </ul>
+                </div>
+            </div>
+<div class="desktop-menu">
+    <a id="logo" href="#">
+        <h1>Sizin pizza</h1>
+    </a>
+    <div class="menu-des">
+        <ul id="deskt-menu">
+            <li><a href="">Ana səhifə</a></li>
+            <li  class="drops">
+                <a  href="#">Haqqımızda</a>
+               
+            </li>
+            
+            <li><a href="">Əlaqə</a></li>
+            <li><a href="">Təklif</a></li>
+        </ul>
+    </div>
+</div>
+        </nav>
+
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="left">
+                    <img src="img/hero2.png" alt="">
+                </div>
+                <div class="right">
+                    <h1>Bir Parça Pizza, <span>Min Duyğu!</span>
+                    </h1>
+                    <p>Sizin Pizza pizza sevənlər üçün ideal bir yerdir! Təzə, keyfiyyətli inqrediyentlərlə hazırlanan geniş pizza menyumuzla hər damaq zövqünə uyğun bir şey təqdim edirik.</p>
+                </div>
+            </div>
+        </section>
+        <section id="prdouctpiza">
+            <h1>Pizzalar</h1>
+            <div id="pizzamehsul" class="sade-content">
+                
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+<div class="footer-content">
+    <div class="footer-main">
+        <div class="menurgft">
+            <h5>Faydalı linklər</h5>
+            <ul class="footermenu">
+                <li><a href="">Ana səhifə</a></li>
+                <li  class="drops">
+                    <a  href="#">Haqqımızda</a>
+                   
+                </li>
+                
+                <li><a href="">Əlaqə</a></li>
+                <li><a href="">Təklif</a></li>
+            </ul>
+        </div>
+        <div class="footer-center">
+            <h5>Ünvan:</h5>
+            <p> <i class="fa-solid fa-location-dot"></i>Bakı Ə.Rəcəbli 14 A
+            </p>
+        </div>
+        <div class="fotoer-rgth">
+            <h5>Sosial Şəbəkə</h5>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+        </div>
+    </div>
+</div>
+        
+    </footer>
+    <script src="JS/data.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
