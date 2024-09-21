@@ -24,6 +24,21 @@ nav{
     display: flex;
     align-items: center;
      justify-content: space-between;
+     
+}
+.users{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    i{
+    font-size: 15px;
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        font-size: 15px;
+    }
 }
 #logo h1{
 color: #fff;
@@ -294,6 +309,22 @@ color: #fff;
         align-items: center;
         justify-content: center;
         
+    }
+    .users{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        i{
+        font-size: 20px;
+            color: #fff;
+            margin: 0 10px;
+        }
+        p{
+            color: #fff;
+            font-size: 20px;
+        }
     }
     #deskt-menu{
         margin: 0 10px;
