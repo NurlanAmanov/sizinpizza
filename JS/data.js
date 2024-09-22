@@ -140,3 +140,61 @@ let data = [
  "img": "../img/mehsullar/Pepperoni pizza.png"
     }
 ];
+let burgers = [
+    {
+        "id": '1',
+        "name": "Classic Burger",
+        "Terkib": "Mal əti kotleti, kahı, pomidor, turşu, soğan, pendir, burger çörəyi.",
+        "Pirce": 8,
+         "img": "../img/Burger/Chicken Burger.jfif"
+    },
+    {
+        "id": '2',
+        "name": "Cheese Burger",
+        "Terkib": "Mal əti kotleti, pendir, turşu, soğan, xüsusi sous, burger çörəyi.",
+        "Pirce": 9,
+     "img": "../img/Burger/Chicken Burger.jfif"
+    },
+    {
+        "id": '3',
+        "name": "Chicken Burger",
+        "Terkib": "Toyuq əti kotleti, kahı, pomidor, mayo, burger çörəyi.",
+        "Pirce": 7,
+        "img": "../img/Burger/Chicken Burger.jfif"
+    },
+    {
+        "id": '4',
+        "name": "Veggie Burger",
+        "Terkib": "Tərəvəz kotleti, kahı, pomidor, təzə tərəvəzlər, vegan pendiri, burger çörəyi.",
+        "Pirce": 6,
+          "img": "../img/Burger/Chicken Burger.jfif"
+    },
+    {
+        "id": '5',
+        "name": "BBQ Burger",
+        "Terkib": "Mal əti kotleti, BBQ sousu, pendir, turşu, qızardılmış soğan, burger çörəyi.",
+        "Pirce": 10,
+          "img": "../img/Burger/Chicken Burger.jfif"
+    },
+    {
+        "id": '6',
+        "name": "Spicy Chicken Burger",
+        "Terkib": "Acılı toyuq kotleti, kahı, turşu, mayo, burger çörəyi.",
+        "Pirce": 8,
+      "img": "../img/Burger/Chicken Burger.jfif"
+    },
+    {
+        "id": '7',
+        "name": "Bacon Burger",
+        "Terkib": "Mal əti kotleti, pastırma, pendir, qızardılmış soğan, xüsusi sous, burger çörəyi.",
+        "Pirce": 11,
+   "img": "../img/Burger/Chicken Burger.jfif"
+    },
+    {
+        "id": '8',
+        "name": "Mushroom Swiss Burger",
+        "Terkib": "Mal əti kotleti, göbələk, İsveçrə pendiri, mayo, burger çörəyi.",
+        "Pirce": 10,
+   "img": "../img/Burger/Chicken Burger.jfif"
+    }
+];

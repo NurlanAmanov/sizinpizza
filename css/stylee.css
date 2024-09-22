@@ -9,11 +9,15 @@ header{
   background: #FDA403;
 
 }
+.mobile-kat{ display: flex!important;}
 .mobile-menu-bars{
     display: block;
 }
 .desktop-menu{
     display: none;
+}
+.desktop-kat{
+    display: none!important;
 }
 nav{
     position: relative;
@@ -52,14 +56,15 @@ font-size: 20px;
 }
 .mobile-bar{
 display: flex;
-justify-content: start;
+align-items: center;
+flex-direction: column;
 top: 0;
 position: absolute;
 left: -100%;
 transition: .2s ease-in;
 height: 100vh;
 width: 80%;
-background: white;
+background: rgb(255, 179, 14);
 padding: 10px;
 z-index: 2;
 }
@@ -67,14 +72,21 @@ z-index: 2;
 
 #mobile-menu{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 5px;
     list-style: none;
+    width: 100%;
+    margin: 0 10px;
     li{
         margin: 10px;
         display: flex;
-        align-items: start;
-        justify-content: start;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        border-radius: 10px 5px;
+        width: 100%;
 
     }
     a{
@@ -82,7 +94,8 @@ z-index: 2;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         margin: 5px 0;
-        color: #000;
+        color: #000000;
+
     }
 }
 .drops {
@@ -91,7 +104,42 @@ z-index: 2;
     justify-content: start;
     flex-direction: column;
 }
+.katagorya{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+.katagorya h4{
+    font-size: 22px;
+    color: #FFf;
+}
+.katagorya span{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px 5px;
+    img{
+        width: 50px;
+        object-fit: cover;
+    }
 
+}
+.burger{
+   width: 80px!important; 
+   object-fit: cover;
+}
+.icki{
+   width: 40px!important; 
+   object-fit: cover;
+}
 .dropd {
     display: flex;
     flex-direction: column;
@@ -175,12 +223,22 @@ z-index: 2;
     padding: 10px;
     text-align: center;
     h1{
-        font-family: 20px;
+        font-family: 35px;
         color: #FD8D14;
     }
 }
+#burgerprdoc {
+    padding: 10px;
+}
+#burgerprdoc h1{
+    text-align: center;
+    font-family: 30px;
+        color: #FD8D14;
+        margin: 30px;
+}
 .sade-content{
     margin-top: 10px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -211,12 +269,14 @@ z-index: 2;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     h4{
         font-size: 18px;
         color: #FDA403;
     }
     p{
         font-size: 12px;
+        margin-left: 10px;
     }
 }
 .pizza-img img {
@@ -241,11 +301,29 @@ z-index: 2;
     font-weight: 650;
     
 }
+
+/* Burgerler */
+.burger-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    /* background: url(../img/burgerbg2.avif);
+  background-position: center;
+  background-size: cover;
+  height: 300px; */
+}
+
+
 .footer-content{
+    width: 100%;
     background: #FDA403;
     
 }
 .footer-main{
+    width: 100%;
     padding: 10px;
     display: flex;
   
@@ -292,6 +370,9 @@ color: #fff;
 @media only screen and (min-width: 761px){
     .mobile-menu-bars{
         display: none;
+    }
+    .desktop-kat{
+        display: flex!important;
     }
     #logo h1{
         color: #fff;
@@ -343,6 +424,9 @@ color: #fff;
         color: #fff;
         transition: .3s ease;
         padding: 10px;
+    }
+    #deskt-menu i{
+        margin: 0 10px;
     }
     #deskt-menu li a:hover{
         background: #FFf;
@@ -412,11 +496,14 @@ color: #fff;
         }
     }
 
-    #prdouctpiza h1{
-        margin-bottom: 40px;
+    #prdouctpiza,#burgerprdoc h1{
+        margin-bottom: 30px;
+        font-size: 30px;
     }
+  
     .sade-content{
-        margin-top: 10px;
+        margin-top: 50px;
+        margin-bottom: 40px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -455,7 +542,7 @@ color: #fff;
             color: #FDA403;
         }
         p{
-            font-size: 12px;
+            font-size: 14px;
         }
     }
     .pizza-img img {
@@ -481,6 +568,47 @@ color: #fff;
         font-size: 20px;
         font-weight: 650;
         
+    }
+
+    .katagorya{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        padding: 5px;
+        margin: 10px auto;
+        background: #FDA403;
+    }
+    .katagorya h4{
+        font-size: 22px;
+        color: #FFf;
+    }
+    .katagorya span{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        
+        font-size: 25px;
+        color: #000;
+        margin: 10px;
+        border-radius: 10px 5px;
+        img{
+            width: 55px;
+            object-fit: cover;
+        }
+    
+    }
+    .burger{
+       width: 90px!important; 
+       object-fit: cover;
+    }
+    .icki{
+       width: 40px!important; 
+       object-fit: cover;
     }
     .footer-main{
         padding: 10px;
